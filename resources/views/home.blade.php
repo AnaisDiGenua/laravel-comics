@@ -6,5 +6,6 @@
 
 
 @section('pageContent')
-    @include('partials.hero')
+    @include('sections.hero')
+    @include('sections.comics')
 @endsection
