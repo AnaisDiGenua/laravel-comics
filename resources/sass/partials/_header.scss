@@ -1,0 +1,36 @@
+header {
+    height: 100px;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .logo img {
+        width: 80px;
+        cursor: pointer;
+    }
+    nav {
+        text-align: right;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 700;
+                    padding: 34px 15px;
+                    color: $darkGray;
+                    transition: 0.2s ease-out;
+                    &.active, &:hover {
+                        color: $secondaryColor;
+                        border-bottom: 5px solid $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
